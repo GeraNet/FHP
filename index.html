@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FHP – Freelance Hobby Projekt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+
+  <div class="logo">
+    FHP
+  </div>
+
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
+
+<!-- MENU -->
+<div class="menu" id="menu">
+
+  <a href="#hero" onclick="toggleMenu()">Start</a>
+  <a href="#about" onclick="toggleMenu()">Über mich</a>
+  <a href="#benefits" onclick="toggleMenu()">Vorteile</a>
+  <a href="#services" onclick="toggleMenu()">Leistungen</a>
+  <a href="#contact" onclick="toggleMenu()">Kontakt</a>
+
+  <a onclick="openModal('impressum')">Impressum</a>
+  <a onclick="openModal('datenschutz')">Datenschutz</a>
+
+</div>
+
+<!-- HERO -->
+<header id="hero">
+
+  <div class="hero-badge fade">
+    Freelance Hobby Projekt
+  </div>
+
+  <h1 class="fade">
+    Moderne Webseiten<br>
+    mit Fokus auf Design,<br>
+    Klarheit und Wirkung.
+  </h1>
+
+  <p class="fade hero-text">
+    FHP entwickelt moderne Webseiten und Logos
+    für Projekte, Ideen und kleine Unternehmen.
+  </p>
+
+  <div class="hero-buttons fade">
+    <a href="#contact" class="btn black">Kontakt</a>
+    <a href="#services" class="btn light">Leistungen</a>
+  </div>
+
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+
+  <div class="section-top fade">
+    <span>Über FHP</span>
+  </div>
+
+  <div class="big-card fade">
+
+    <h2>
+      Direkt. Modern. Verständlich.
+    </h2>
+
+    <p>
+      FHP ist ein persönliches Freelance Hobby Projekt aus Gera.
+      Fokus liegt auf modernen Webseiten,
+      klarer Struktur und guter Benutzererfahrung.
+    </p>
+
+    <p>
+      Keine komplizierten Prozesse,
+      keine Agentur-Struktur —
+      direkte Zusammenarbeit und schnelle Kommunikation.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+
+  <div class="section-top fade">
+    <span>Vorteile</span>
+  </div>
+
+  <div class="grid">
+
+    <div class="card fade">
+      ⚡ Schnelle Umsetzung
+    </div>
+
+    <div class="card fade">
+      📱 Optimiert für Smartphones
+    </div>
+
+    <div class="card fade">
+      🎯 Fokus auf Klarheit
+    </div>
+
+    <div class="card fade">
+      🧠 Moderne Benutzerführung
+    </div>
+
+    <div class="card fade">
+      💬 Direkter Kontakt
+    </div>
+
+    <div class="card fade">
+      🚀 Modernes Auftreten
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+  <div class="section-top fade">
+    <span>Leistungen</span>
+  </div>
+
+  <div class="service-card fade">
+
+    <div class="service-number">
+      01
+    </div>
+
+    <div>
+      <h2>Websites</h2>
+
+      <p>
+        Moderne Webseiten für Projekte,
+        Ideen oder kleine Unternehmen.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="service-card fade">
+
+    <div class="service-number">
+      02
+    </div>
+
+    <div>
+      <h2>Logos</h2>
+
+      <p>
+        Minimalistische Logos
+        mit modernem Erscheinungsbild.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="contact-card fade">
+
+    <h2>Kontakt</h2>
+
+    <p>
+      Schreib mir direkt über Telegram oder WhatsApp.
+    </p>
+
+    <div class="contact-buttons">
+
+      <a class="btn black" href="https://t.me/Duf7484">
+        Telegram
+      </a>
+
+      <a class="btn light" href="https://wa.me/380972921871">
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FLOAT -->
+<a class="float-btn" href="https://t.me/Duf7484">
+  💬
+</a>
+
+<!-- FOOTER -->
+<footer>
+
+  © 2026 FHP – Freelance Hobby Projekt
+
+  <div class="footer-links">
+
+    <span onclick="openModal('impressum')">
+      Impressum
+    </span>
+
+    <span onclick="openModal('datenschutz')">
+      Datenschutz
+    </span>
+
+  </div>
+
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="closeModal()">
+
+  <div class="modal-box" onclick="event.stopPropagation()">
+
+    <!-- IMPRESSUM -->
+    <div id="impressum" class="modal-content">
+
+      <h2>Impressum</h2>
+
+      <p>
+        FHP – Freelance Hobby Projekt
+      </p>
+
+      <p>
+        Betreiber: Vadim Zavadskij
+      </p>
+
+      <p>
+        Standort: Gera, Deutschland
+      </p>
+
+      <p>
+        Kontakt:<br>
+        Telegram: @Duf7484<br>
+        WhatsApp: +380972921871
+      </p>
+
+      <p>
+        Privates Hobbyprojekt.
+      </p>
+
+    </div>
+
+    <!-- DATENSCHUTZ -->
+    <div id="datenschutz" class="modal-content">
+
+      <h2>Datenschutz</h2>
+
+      <p>
+        Keine aktive Datenspeicherung.
+      </p>
+
+      <p>
+        Hosting-Anbieter können technische Daten verarbeiten.
+      </p>
+
+      <p>
+        Kontakt erfolgt nur über externe Dienste.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
